@@ -1,40 +1,40 @@
 config.tx_ptpiwik {
 
-	#cat=piwik/jQuery/10, type=boolean, label=Should JQuery included by pt_piwik?
+	#cat=piwik/jQuery/10; type=boolean; label=Should JQuery included by pt_piwik?
 	includeJQuery = 0
 
 	jQuery {
-		#cat=piwik/jQuery/20, type=string, label=The URL from where JQuery is included
+		#cat=piwik/jQuery/20; type=string; label=The URL from where JQuery is included
 		sourceUrl =
-		#cat=piwik/jQuery/30, type=string, label=Should JQuery be included in the footer?
+		#cat=piwik/jQuery/30; type=string; label=Should JQuery be included in the footer?
 		includeFooter = 1
 	}
 
-	#cat=piwik/jQueryCookie/10, type=boolean, label=Should JQueryCookie included by pt_piwik?
+	#cat=piwik/jQueryCookie/10; type=boolean; label=Should JQueryCookie included by pt_piwik?
 	includeJQueryCookie = 0
 
 	jQueryCookie {
-		#cat=piwik/jQueryCookie/20, type=string, label=The URL from where JQueryCookie is included
+		#cat=piwik/jQueryCookie/20; type=string; label=The URL from where JQueryCookie is included
 		sourceUrl =
-		#cat=piwik/jQueryCookie/30, type=boolean, label=Should JQueryCookie be included in the footer?
+		#cat=piwik/jQueryCookie/30; type=boolean; label=Should JQueryCookie be included in the footer?
 		includeFooter = 1
 	}
 	
 	piwik {
 
-		#cat=piwik/Config/10, type=string, label=The URL of your piwik instance
+		#cat=piwik/Config/10; type=string; label=The URL of your piwik instance
 		url = localhost/piwik
-		#cat=piwik/Config/20, type=int+, label=The ID of the piwik tracking instance
+		#cat=piwik/Config/20; type=int+; label=The ID of the piwik tracking instance
 		site_id = 1
-		#cat=piwik/Config/30, type=boolean, label=Should the asynchronous code be used?
+		#cat=piwik/Config/30; type=boolean; label=Should the asynchronous code be used?
 		asynchronous = 1
 
 	}
 
-	#cat=piwik/Search/10, type=int+, label=The PID of your site search
+	#cat=piwik/Search/10; type=int+; label=The PID of your site search
 	searchPid =
-	#cat=piwik/Search/20, type=string, label=The html element (css notation) for one search result. Used to count the results
+	#cat=piwik/Search/20; type=string; label=The html element (css notation) for one search result. Used to count the results
 	searchHtmlElement =
-	#cat=piwik/Search/30, type=string, label=The name of the GET-parameter with the searchword.
+	#cat=piwik/Search/30; type=string; label=The name of the GET-parameter with the searchword.
 	searchParam =
 }
