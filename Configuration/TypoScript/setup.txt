@@ -1,0 +1,28 @@
+config.tx_ptpiwik {
+	includeJQuery = {$config.tx_ptpiwik.includeJQuery}
+
+	jQuery {
+		sourceUrl = {$config.tx_ptpiwik.jQuery.sourceUrl}
+		includeFooter = {$config.tx_ptpiwik.jQuery.includeFooter}
+	}
+
+	includeJQueryCookie = {$config.tx_ptpiwik.includeJQueryCookie}
+
+	jQueryCookie {
+		sourceUrl = {$config.tx_ptpiwik.jQueryCookie.sourceUrl}
+		includeFooter = {$config.tx_ptpiwik.jQueryCookie.sourceUrl}
+	}
+
+	piwik {
+
+		url = {$config.tx_ptpiwik.piwik.url}
+		siteId = {$config.tx_ptpiwik.piwik.siteId}
+		asynchronous = {$config.tx_ptpiwik.piwik.asynchronous}
+
+	}
+
+	searchPid = {$config.tx_ptpiwik.search.searchPid}
+	searchHtmlElement = {$config.tx_ptpiwik.search.searchHtmlElement}
+	searchParam = {$config.tx_ptpiwik.search.searchParam}
+
+}
