@@ -1,0 +1,2 @@
+#cat=pt_piwik/Config/10; type=string; label=Path of the configuration
+configFilePath = typo3conf/pt_piwik_conf.ts
