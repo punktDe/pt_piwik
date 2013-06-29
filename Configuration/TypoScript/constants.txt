@@ -1,3 +1,9 @@
+# customsubcategory=jQuery=JQuery Settings
+# customsubcategory=jQueryCookie=JQuery Cookie Settings
+# customsubcategory=Config=Piwik Config
+# customsubcategory=Search=Search Config
+
+
 config.tx_ptpiwik {
 
 	#cat=piwik/jQuery/10; type=boolean; label=Should JQuery included by pt_piwik?
