@@ -1,14 +1,14 @@
 config.tx_ptpiwik {
-	includeJQuery = {$config.tx_ptpiwik.includeJQuery}
 
 	jQuery {
+		includeJQuery = {$config.tx_ptpiwik.includeJQuery}
 		sourceUrl = {$config.tx_ptpiwik.jQuery.sourceUrl}
 		includeFooter = {$config.tx_ptpiwik.jQuery.includeFooter}
 	}
 
-	includeJQueryCookie = {$config.tx_ptpiwik.includeJQueryCookie}
 
 	jQueryCookie {
+		includeJQueryCookie = {$config.tx_ptpiwik.includeJQueryCookie}
 		sourceUrl = {$config.tx_ptpiwik.jQueryCookie.sourceUrl}
 		includeFooter = {$config.tx_ptpiwik.jQueryCookie.sourceUrl}
 	}
@@ -20,9 +20,9 @@ config.tx_ptpiwik {
 		asynchronous = {$config.tx_ptpiwik.piwik.asynchronous}
 
 	}
-
-	searchPid = {$config.tx_ptpiwik.search.searchPid}
-	searchHtmlElement = {$config.tx_ptpiwik.search.searchHtmlElement}
-	searchParam = {$config.tx_ptpiwik.search.searchParam}
-
+	search {
+		pid = {$config.tx_ptpiwik.search.pid}
+		htmlElement = {$config.tx_ptpiwik.search.htmlElement}
+		param = {$config.tx_ptpiwik.search.param}
+	}
 }
