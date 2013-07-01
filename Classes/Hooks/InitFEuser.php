@@ -24,6 +24,7 @@
  ***************************************************************/
 namespace PunktDe\PtPiwik\Hooks;
 
+use PunktDe\PtPiwik\Model\FileHandler;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -32,6 +33,11 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class InitFEuser  {
 
+	/**
+	 * @var FileHandler
+	 * @inject
+	 */
+	protected $fileHandler;
 
 	/**
 	 * This method is called by a hook in t3lib_userauth::start(): hook to manipulate user array on TSFE
@@ -44,9 +50,7 @@ class InitFEuser  {
 
 		if (is_array($params['pObj']->fe_user->user) && ($GLOBALS['TSFE']->fe_user instanceof \TYPO3\CMS\Frontend\Authentication\FrontendUserAuthtenication)) {
 
-			// TODO get path to config file
-			// TODO if path does not exist create path
-			// TODO if file does not exist create file
+			$configFileContent = $this->fileHandler->getConfigurationFileContent();
 			// TODO use ts parser to make file to ts array
 			// TODO fill tsfe
 		}
