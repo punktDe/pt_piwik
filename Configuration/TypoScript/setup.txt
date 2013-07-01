@@ -19,6 +19,34 @@ config.tx_ptpiwik {
 		siteId = {$config.tx_ptpiwik.piwik.siteId}
 		asynchronous = {$config.tx_ptpiwik.piwik.asynchronous}
 
+		fields {
+
+			# 10 {
+				# type = cookie
+				# name = department
+				# scope = visit
+			# }
+
+			# 20 {
+				# type = cookie
+				# name = name, function
+				# render = {name} - {function}
+
+			# 30 {
+				# type = javascript
+				# function (
+				#	$path = this.document.href;
+				#	return $path;
+				# )
+				# scope = page
+			# }
+
+			# 40 {
+				# type = javascript
+				# function = getNumberOfUnreadMessages();
+			# }
+		}
+
 	}
 	search {
 		pid = {$config.tx_ptpiwik.search.pid}
