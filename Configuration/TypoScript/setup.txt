@@ -43,7 +43,7 @@ config.tx_ptpiwik {
 
 			# 40 {
 				# type = javascript
-				# function = getNumberOfUnreadMessages();
+				# function = return getNumberOfUnreadMessages();
 			# }
 		}
 
